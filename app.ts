@@ -8,6 +8,7 @@ const router = express.Router();
 router.get("/", (req: Request, res: Response, next: NextFunction) => {
   const body = req.query;
   console.log(body);
+  console.log('here');
   res.json(body);
 });
 
